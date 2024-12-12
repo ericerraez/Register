@@ -65,11 +65,8 @@ WSGI_APPLICATION = 'djangoProject.wsgi.application'
 
 # Database
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-        }
-    }
+    'default': dj_database_url.config(default=os.getenv("DATABASE_URL", "postgresql://postgres:wTfAOTqzrhDkXjhzlnqodwTeSIablBsP@autorack.proxy.rlwy.net:40804/railway"))
+}
 
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
