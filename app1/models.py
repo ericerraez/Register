@@ -65,7 +65,6 @@ class Confirmacion(models.Model):
     fecha_confirmacion = models.DateField(null=True, blank=True)
     padre = models.CharField(max_length=255, blank=True, null=True)
     madre = models.CharField(max_length=255, blank=True, null=True)
-    padrinos = models.CharField(max_length=100, blank=True, null=True) 
     celebrante = models.CharField(max_length=255, blank=True, null=True)
 
     # Registro eclesiástico
