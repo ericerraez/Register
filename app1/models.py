@@ -42,6 +42,7 @@ class Comunion(models.Model):
     padre = models.CharField(max_length=100, blank=True, null=True)
     madre = models.CharField(max_length=100, blank=True, null=True)
     celebrante = models.CharField(max_length=255, blank=True, null=True)
+    padrinos = models.CharField(max_length=100, blank=True, null=True)
     fecha_registro = models.DateField(null=True, blank=True)
     ano_registro_eclesiastico = models.CharField(max_length=100, blank=True, null=True)
     tomo = models.CharField(max_length=100, blank=True, null=True)
